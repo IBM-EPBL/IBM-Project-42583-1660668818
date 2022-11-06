@@ -1,0 +1,58 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Registration Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;   
+  background-image: url('C:/Users/Jeba/Desktop/img.jpg');
+}  
+h1{
+    font-family: "Cursive";
+}
+button {   
+       background-color: #4fbb80;   
+       width: 100%;  
+        color: rgb(14, 11, 7);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=tel], input[type=email]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+.container {   
+        padding: 100px;   
+        background-color: rgba(252, 141, 141, 0.911); 
+        background-image: url('C:/Users/Jeba/Desktop/img.jpg');
+    }   
+</style>   
+</head>    
+<body>   
+    <center> <h1><font color="yellow"><i> Registration Form </i></font></h1> </center>   
+    <form method="post" action="/confirm">  
+        <div class="container">   
+            <label><font color="white">Username : </font></label>   
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label><font color="white">Email :</font> </label>
+            <input type="email" placeholder="Enter Email Id" name="email" required>
+            <label><font color="white">Phone Number : </font></label>   
+            <input type="tel" placeholder="Enter Phone no." name="phone" required>  
+            <button type="submit"><b><font color="white">REGISTER</font></b></button>  
+        </div>   
+    </form>     
+</body>     
+</html>  
