@@ -1,0 +1,66 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;   
+  background-image: url('C:/Users/Jeba/Desktop/img.jpg');
+}  
+h1{
+    font-family: "Cursive";
+}
+button {   
+       background-color: #4fbb80;   
+       width: 100%;  
+        color: rgb(14, 11, 7);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 100px;   
+        background-color: rgba(252, 141, 141, 0.911); 
+        background-image: url('C:/Users/Jeba/Desktop/img.jpg');
+    }   
+</style>   
+</head>    
+<body>   
+    <center> <h1><font color="white"><i> Login Form </i></font></h1> </center>   
+    <form method="post" action="page.html">  
+        <div class="container">   
+            <label><font color="white">Username : </font></label>   
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label><font color="white">Password : </font></label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit"><b><font color="white">LOG IN</font></b></button>   
+            <input type="checkbox" checked="checked"> <b><font color="white">Remember me</font></b>   
+            <button type="button" class="cancelbtn"><b>Cancel</b></button>   
+            <font color="white">Forgot </font><a href="#"> <font color="white">password? </font></a>   
+        </div>   
+    </form>     
+</body>     
+</html>  
