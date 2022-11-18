@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Login Registraion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="main">
+                <div class="navbar1">
+                <div class="icon">
+                    <h2 class="logo">HeyNews</h2>
+                </div>
+    
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+    
+                <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type To text">
+                    <a href="#"> <button class="btn2">Search</button></a>
+                </div>
+    
+            </div> 
+            <div class="content">
+                <h2 style="color: #ff7200">  &ensp;&ensp;&ensp;NEWS TRACKER</h2>
+                <br>
+                <p class="par"><pre><i style="color:rgb(235, 238, 237)">Bringing you breaking news from the Associated Press and hundreds of trusted local sources.
+Trusted source for real-time news coverage anytime and anywhere.
+The app also offers the World Service Radio streamed live, social features and personalisation 
+so you can re-order the news categories to suit your interests.</i></pre></p>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn1"></div>
+                    <button type="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+                    <button type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+                </div>
+                <div class="social-icons">
+                    <img src="google.png">
+                    <img src="mail.png">
+                </div>
+                <form id="login" class="input-group" action="index.html">
+                    <input type="text" class="input-field" placeholder="User Id" name="username" required>
+                    <input type="password" class="input-field" placeholder="Enter password" name="password" required>
+                    <input type="checkbox" class="check-box"><span class="a">Remember Password</span>
+                    <button type="submit" class="submit-btn"><b>Log In</b></button>
+                </form>
+                <form id="register" class="input-group" action="index.html">
+                    <input type="text" class="input-field" placeholder="User Id" name="username" required>
+                    <input type="email" class="input-field" placeholder="Email Id" name="email" required>
+                    <input type="password" class="input-field" placeholder="Enter password" name="password" required>
+                    <input type="checkbox" class="check-box"><span class="a">I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn"><b>Register</b></button>
+                </form>
+            </div>
+            </div>
+        </div>
+        <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn1");
+            
+            function register(){
+                x.style.left= "-400px";
+                y.style.left= "50px";
+                z.style.left= "110px";
+            }
+            function login(){
+                x.style.left= "50px";
+                y.style.left= "450px";
+                z.style.left= "0";
+            }
+        </script>
+    </body>
+</html>
